@@ -1,41 +1,24 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Munja Kurir</title>
-  <style>
-    body { font-family: sans-serif; background: #e9f5ec; color: #065f46; padding: 20px; }
-    form { background: white; padding: 20px; border-radius: 10px; max-width: 400px; margin: auto; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #10b981; color: white; border: none; padding: 10px 15px; border-radius: 5px; margin-top: 15px; }
-  </style>
-</head>
-<body>
-  <h2>Munja - Porudžbina kurira</h2>
-  <form action="https://formspree.io/f/xldlnqnz" method="POST">
-    <label>Ime i prezime pošiljaoca:</label>
-    <input type="text" name="posiljalac" required />
-    
-    <label>Kontakt pošiljaoca:</label>
-    <input type="tel" name="kontakt_posiljalac" required />
-    
-    <label>Adresa preuzimanja:</label>
-    <input type="text" name="adresa_preuzimanja" required />
-    
-    <label>Ime i prezime primaoca:</label>
-    <input type="text" name="primalac" required />
-    
-    <label>Kontakt primaoca:</label>
-    <input type="tel" name="kontakt_primalac" required />
-    
-    <label>Adresa ostavljanja:</label>
-    <input type="text" name="adresa_ostavljanja" required />
-    
-    <label>Šta se nosi:</label>
-    <textarea name="sta_se_nosi" required></textarea>
-    
-    <button type="submit">Pošalji porudžbinu</button>
-  </form>
-</body>
-</html>
+<form action="https://formspree.io/f/xldlnqnz" method="POST">
+  <label for="posaljalac">Pošiljalac (ime i prezime):</label><br>
+  <input type="text" id="posaljalac" name="Pošiljalac" required><br><br>
+
+  <label for="kontakt_posiljaoca">Kontakt pošiljaoca (telefon, Viber, WhatsApp):</label><br>
+  <input type="text" id="kontakt_posiljaoca" name="Kontakt pošiljaoca" required><br><br>
+
+  <label for="adresa_preuzimanja">Adresa preuzimanja:</label><br>
+  <input type="text" id="adresa_preuzimanja" name="Adresa preuzimanja" required><br><br>
+
+  <label for="primalac">Primalac (ime i prezime):</label><br>
+  <input type="text" id="primalac" name="Primalac" required><br><br>
+
+  <label for="kontakt_primaoca">Kontakt primaoca (telefon):</label><br>
+  <input type="text" id="kontakt_primaoca" name="Kontakt primaoca" required><br><br>
+
+  <label for="adresa_dostave">Adresa dostave:</label><br>
+  <input type="text" id="adresa_dostave" name="Adresa dostave" required><br><br>
+
+  <label for="opis_posiljke">Opis pošiljke:</label><br>
+  <textarea id="opis_posiljke" name="Opis pošiljke" rows="3" required></textarea><br><br>
+
+  <button type="submit">Pošalji porudžbinu</button>
+</form>
